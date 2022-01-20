@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url(/images/background/background.gif);
+    background-size: cover;
+}
+/*Header*/
+header{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.headlist{
+    display: flex;
+    flex-basis: 100%;
+    justify-content: space-around;
+}
+.nav{
+    color: #fff;
+    transition: 200ms ease-in;
+    list-style: none;
+}
+.nav:hover{
+    cursor: pointer;
+    opacity: .8;
+    transform: scale(1.1);
+    background-color: #fff;
+    color: #000;
+    box-shadow: 0px 0px 30px #EA2027;
+}
+/*Header*/
+/*MAIN*/
+.main{
+    width: 100%;
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+}
+.top{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-basis: 50%;
+}
+.bottom{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-basis: 50%;
+}
+.container{
+    position: relative;
+    width: 20vh;
+    height: 300px;
+    box-shadow: 15px 10px 20px #341f97;
+}
+.container:hover{
+    box-shadow: 15px 10px 20px #fff200;
+}
+.card{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: 1s ease-in;
+}
+.card:hover{
+    transform: rotateY(180deg);
+}
+.front{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+.back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+}
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+img:hover{
+    cursor: pointer;
+}
+/*Main*/
+/*Footer*/
+footer{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.foot{
+    color: #fff;
+    transition: 200ms ease-in;
+}
+.foot:hover{
+    cursor: pointer;
+    opacity: .8;
+    transform: scale(1.1);
+    background-color: #fff;
+    color: #000;
+    box-shadow: 0px 0px 30px #EA2027;
+}
+.footlist{
+    display: flex;
+    flex-basis: 100%;
+    justify-content: space-around;
+    list-style: none;
+}
